@@ -20,7 +20,7 @@ const TournamentsListModal: React.FC<IModalProps> = ({
   tournamentIdSelected,
 }) => {
   const { data: tournamentsData } = useGetTournamentsName();
-
+  console.log('CONSOLE ---TournamentsListModal--', { tournamentsData });
   const onSelectedItem = (id: number) => {
     onChangeTournament(id);
   };
@@ -34,15 +34,16 @@ const TournamentsListModal: React.FC<IModalProps> = ({
     >
       <Column className={styles.content}>
         <p className={styles.modalTitle}>Lista de Torneos</p>
-        {tournamentsData?.map((t) => (
-          <ItemList
-            key={t.id}
-            status={t.status}
-            name={capitalizeFirstLetter(t.name) || t.name}
-            onSelected={() => onSelectedItem(t.id)}
-            isSelected={tournamentIdSelected === t.id}
-          />
-        ))}
+        {tournamentsData?.length &&
+          tournamentsData.map((t) => (
+            <ItemList
+              key={t.id}
+              status={t.status}
+              name={capitalizeFirstLetter(t.name) || t.name}
+              onSelected={() => onSelectedItem(t.id)}
+              isSelected={tournamentIdSelected === t.id}
+            />
+          ))}
       </Column>
     </Modal>
   );
