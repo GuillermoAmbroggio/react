@@ -1,0 +1,21 @@
+.loginText {
+  cursor: pointer;
+}
+
+.registerText {
+  border: 1px solid var(--primary-text);
+  border-radius: 12px;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.loginText:hover,
+.registerText:hover {
+  opacity: 0.7;
+}
+
+.dividerWidth {
+  width: 33%;
+  display: flex;
+  justify-content: center;
+}

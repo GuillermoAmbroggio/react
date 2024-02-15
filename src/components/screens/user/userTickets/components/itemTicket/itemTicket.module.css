@@ -1,0 +1,78 @@
+.containerItemTicket {
+  background-color: var(--secondary);
+  border: 1px solid var(--primary);
+  align-items: center;
+  padding: 12px 24px;
+  justify-content: space-between;
+  border-radius: 16px;
+  box-shadow: -3px 7px 7px -2px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: -3px 7px 7px -2px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -3px 7px 7px -2px rgba(0, 0, 0, 0.75);
+  user-select: none;
+}
+
+.leftItemTicket {
+  gap: var(--xxl);
+  align-items: center;
+  width: -webkit-fill-available;
+}
+
+.boldText {
+  font-weight: var(--bold-text);
+}
+
+.ticketContainer {
+  gap: 8px;
+}
+
+.containerButton {
+  font-weight: bold;
+  letter-spacing: 1px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.containerButton:hover {
+  text-decoration: underline;
+  opacity: 0.9;
+}
+
+.ticketText {
+  width: auto;
+}
+
+.fixturename {
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.alertIcon {
+  font-size: 24px;
+  color: var(--error);
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .ticketContainer {
+    gap: 4px;
+  }
+  .leftItemTicket {
+    gap: 10px;
+  }
+  .containerItemTicket {
+    padding: 6px 8px;
+  }
+
+  .ticketText {
+    width: 10px;
+    overflow: hidden;
+  }
+  .containerButton {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    letter-spacing: normal;
+    margin-left: 8px;
+    width: -webkit-fill-available;
+    justify-content: flex-end;
+    display: flex;
+  }
+}

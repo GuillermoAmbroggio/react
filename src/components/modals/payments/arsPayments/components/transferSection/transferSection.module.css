@@ -1,0 +1,87 @@
+.container {
+  align-items: center;
+}
+
+.img {
+  width: auto;
+  background-color: aliceblue;
+  border-radius: 50%;
+  padding: 16px;
+  cursor: pointer;
+  border: 2px solid rgb(177, 177, 177);
+  transition: border 0.5s ease-in-out;
+}
+
+.img:hover {
+  border: 2px solid var(--primary);
+  opacity: 0.9;
+}
+
+.title {
+  font-size: var(--xl);
+  text-transform: uppercase;
+  font-weight: 600;
+  color: var(--primary-text);
+  margin-bottom: 16px;
+}
+.idBinance {
+  font-size: var(--l);
+  font-weight: 600;
+  color: var(--primary);
+}
+
+.bodyText {
+  font-size: var(--m);
+  margin-top: 16px;
+}
+
+.boldtext {
+  font-weight: bold;
+}
+
+.subTitleInstructions {
+  align-items: flex-end;
+  gap: 10px;
+}
+
+.transferForm {
+  gap: 16px;
+}
+
+.input {
+  width: 300px;
+}
+
+.bankData {
+  margin-bottom: 16px;
+}
+
+.importantText {
+  font-size: var(--s);
+  font-style: italic;
+  margin-top: 8px;
+}
+
+.buttonNotif {
+  margin-top: 22px;
+  color: #000;
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: var(--m);
+  }
+  .idBinance {
+    font-size: var(--m);
+  }
+  .bodyText {
+    font-size: var(--s);
+  }
+  .transferForm {
+    flex-direction: column;
+    gap: 6px;
+  }
+  .buttonNotif {
+    margin-top: 0px;
+  }
+}

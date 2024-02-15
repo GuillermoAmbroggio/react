@@ -1,0 +1,184 @@
+.containerFixtureItem {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: var(--primary-text);
+  user-select: none;
+  font-size: var(--m);
+  font-weight: 600;
+}
+
+.containerTeam {
+  display: flex;
+  font-weight: 700;
+  align-items: center;
+  width: 200px;
+  justify-content: center;
+  pointer-events: none;
+  cursor: not-allowed;
+  padding: 0px 16px 0px 16px;
+  overflow: hidden;
+  gap: 16px;
+  height: -webkit-fill-available;
+}
+
+.containerTeamSelected {
+  box-shadow: 0px 5px 10px 0px rgba(255, 255, 255, 0.75);
+  -webkit-box-shadow: 0px 5px 10px 0px rgba(255, 255, 255, 0.75);
+  -moz-box-shadow: 0px 5px 10px 0px rgba(255, 255, 255, 0.75);
+  border: 2px solid var(--dark);
+  color: var(--primary);
+  border-radius: 16px;
+}
+
+.containerTeamSuccessful {
+  border: 3px solid var(--primary);
+  color: var(--primary);
+  border-radius: 16px;
+}
+
+.containerVs {
+  display: flex;
+  font-weight: 700;
+  align-items: center;
+  padding: 2px 0px;
+  width: 100px;
+  justify-content: center;
+  pointer-events: none;
+  cursor: not-allowed;
+  height: -webkit-fill-available;
+}
+
+.teamText {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.teamText::first-letter {
+  text-transform: uppercase;
+}
+
+.containerStatus {
+  border: 1px solid var(--primary-text);
+  border-radius: var(--s);
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  color: var(--primary-text);
+  background-color: rgba(0, 0, 0, 0.3);
+  white-space: nowrap;
+  font-size: var(--s);
+  font-weight: 600;
+  width: 100px;
+  padding: 2px 8px;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 5px 10px 0px rgba(255, 255, 255, 0.75);
+  -webkit-box-shadow: 0px 5px 10px 0px rgba(255, 255, 255, 0.75);
+  -moz-box-shadow: 0px 5px 10px 0px rgba(255, 255, 255, 0.75);
+  height: 50px;
+  overflow: hidden;
+}
+
+.containerMatchItem {
+  width: 100%;
+  height: 50px;
+}
+
+.containerPoints {
+  display: flex;
+  font-weight: 700;
+  align-items: center;
+  width: 70px;
+  pointer-events: none;
+  cursor: not-allowed;
+  border-left: 1px solid var(--primary-text);
+  height: 100%;
+  justify-content: center;
+}
+
+.statusText {
+  line-height: var(--m);
+}
+
+.teamNameRight {
+  align-items: center;
+  gap: 2px;
+  width: -webkit-fill-available;
+}
+
+.teamNameLeft {
+  width: -webkit-fill-available;
+  overflow: hidden;
+}
+
+.checkRigth {
+  align-self: flex-end;
+}
+
+.containerTeamRigth {
+  justify-content: flex-end;
+}
+.teamTextRigth {
+  width: 130px;
+  text-align: end;
+}
+
+@media (max-width: 768px) {
+  .containerTeam {
+    width: 100px;
+    height: 50px;
+    overflow: hidden;
+    gap: 4px;
+    padding: 2px;
+    justify-content: flex-start;
+    padding: 2px 8px 4px 8px;
+  }
+
+  .containerVs {
+    flex: 1;
+    height: -webkit-fill-available;
+  }
+
+  .containerPoints {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 40px;
+  }
+  .containerStatus {
+    width: 90px;
+    font-size: var(--xs);
+    line-height: var(--xs);
+  }
+  .containerFixtureItem {
+    overflow: hidden;
+    width: -webkit-fill-available;
+    font-size: var(--s);
+    font-weight: 600;
+  }
+
+  .containerTextName {
+    overflow: hidden;
+  }
+  .statusText {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .teamNameLeft {
+    align-items: flex-start;
+    gap: 0px;
+  }
+  .teamNameRight {
+    overflow: hidden;
+    align-items: flex-start;
+  }
+  .teamText {
+    white-space: nowrap;
+  }
+  .teamTextRigth {
+    width: auto;
+    text-align: end;
+  }
+}

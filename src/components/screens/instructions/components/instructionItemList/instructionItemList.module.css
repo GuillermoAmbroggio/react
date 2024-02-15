@@ -1,0 +1,16 @@
+.containerItem {
+  color: var(--tertiary-text);
+  gap: 8px;
+  justify-content: flex-start;
+  font-size: var(--l);
+}
+
+.point {
+  background-color: var(--grey);
+  height: 5px;
+  width: 5px;
+  border-radius: 50%;
+  display: inline-block;
+  color: transparent;
+  margin-top: 8px;
+}

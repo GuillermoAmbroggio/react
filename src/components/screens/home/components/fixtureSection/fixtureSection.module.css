@@ -1,0 +1,193 @@
+.containerFixtureSection {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: var(--xl);
+  position: relative;
+  align-items: center;
+}
+
+.backgroundImg {
+  z-index: -1;
+  background-image: url('../../../../../assets/stadium.jpg'); /* Ruta de tu imagen de fondo */
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: -90px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.backgroundImg::after {
+  content: '';
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: -90px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.tournamentText {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: var(--xxl);
+  color: var(--primary-text);
+  gap: 16px;
+  cursor: pointer;
+  align-self: center;
+  padding: var(--xxs);
+  width: -webkit-fill-available;
+  border: 1px solid transparent;
+  transition: border 1s;
+  border-radius: 8px;
+}
+
+.tournamentText svg {
+  width: var(--xxl);
+  height: var(--xxl);
+}
+
+.tournamentText:hover {
+  opacity: 0.8;
+  border: 1px solid white;
+}
+
+.fixtureContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--primary-text);
+  gap: 16px;
+  align-self: center;
+  user-select: none;
+}
+
+.fixturesText {
+  font-size: var(--xl);
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.fixturesText:hover {
+  opacity: 0.8;
+}
+
+.fixturesIcon {
+  cursor: pointer;
+  padding: var(--xxs);
+}
+
+.fixturesIcon:hover {
+  border: 1px solid white;
+  border-radius: 50%;
+  opacity: 0.8;
+}
+
+.containerFixtures {
+  align-items: center;
+  overflow-y: auto;
+  width: fit-content;
+  gap: 16px;
+  padding: 0px 16px;
+}
+
+.buttonConfirm {
+  width: -webkit-fill-available;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: var(--l);
+  margin: 24px 16px 0px 16px;
+}
+
+.containerTable {
+  overflow: hidden;
+}
+
+.content {
+  overflow: hidden;
+}
+
+.prizeContainer {
+  width: -webkit-fill-available;
+  height: 30px;
+  position: relative;
+  border-radius: 16px;
+  color: var(--primary-text);
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  padding: 16px;
+}
+.prizeText {
+  position: relative;
+  white-space: nowrap;
+  font-size: var(--l);
+  z-index: 2;
+}
+.prizeAmount {
+  position: relative;
+  z-index: 2;
+  font-size: var(--xl);
+}
+.prizeContainer::after {
+  content: '';
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  border-radius: 16px;
+  top: 0px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+@media (max-width: 768px) {
+  .tournamentName {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-size: var(--xl);
+  }
+  .tournamentText svg {
+    width: var(--xl);
+    height: var(--xl);
+  }
+  .fixturesText {
+    font-size: var(--l);
+  }
+  .content {
+    width: -webkit-fill-available;
+    flex: 1;
+  }
+  .containerFixtureSection {
+    padding: 0 8px 16px 8px;
+  }
+  .containerFixtures {
+    padding: 0px 0px 16px 0px;
+    width: -webkit-fill-available;
+  }
+  .buttonConfirm {
+    margin-top: 0px;
+    padding: 16px;
+    font-size: var(--m);
+    line-height: var(--m);
+  }
+
+  .prizeContainer {
+    gap: 6px;
+    padding: 8px;
+  }
+  .prizeText {
+    font-size: var(--m);
+  }
+  .prizeAmount {
+    font-size: var(--l);
+  }
+}

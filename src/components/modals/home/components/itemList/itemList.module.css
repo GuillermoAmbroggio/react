@@ -1,0 +1,32 @@
+.containerItemTicket {
+  background-color: var(--secondary);
+  border: 1px solid var(--primary);
+  align-items: center;
+  padding: 6px 12px;
+  justify-content: space-between;
+  border-radius: 16px;
+  box-shadow: -3px 7px 7px -2px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: -3px 7px 7px -2px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -3px 7px 7px -2px rgba(0, 0, 0, 0.75);
+  user-select: none;
+}
+
+.selectedItem {
+  pointer-events: none;
+  opacity: 0.7;
+  cursor: none;
+}
+
+.leftItemTicket {
+  gap: var(--xxl);
+  align-items: center;
+  width: 100%;
+}
+
+.boldText {
+  font-weight: var(--bold-text);
+}
+
+.nameText {
+  min-width: 30%;
+}

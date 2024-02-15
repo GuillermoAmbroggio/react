@@ -1,0 +1,58 @@
+.container {
+  gap: 16px;
+  color: var(--primary-text);
+  align-items: center;
+  user-select: none;
+}
+
+.itemPage {
+  width: 35px;
+  height: 35px;
+  padding: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.selectedItemPage {
+  border: 2px solid var(--primary);
+  border-radius: 50%;
+  color: var(--primary);
+}
+
+.noSelectedItemPage:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+}
+
+.disabledIcon {
+  opacity: 0.5;
+  cursor: auto;
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+}
+
+.iconHover:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+  .container {
+    font-size: var(--s);
+    gap: 8px;
+  }
+  .itemPage {
+    width: 20px;
+    height: 20px;
+    padding: 8px;
+  }
+}

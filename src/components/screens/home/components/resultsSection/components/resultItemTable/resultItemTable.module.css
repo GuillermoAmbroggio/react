@@ -1,0 +1,135 @@
+.puesto,
+.ticket,
+.user,
+.points {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--mid-grey);
+  padding: 6px 0px;
+  border-radius: 4px;
+  color: var(--light-grey);
+}
+
+.puesto {
+  width: 80px;
+  font-weight: bold;
+}
+
+.ticket {
+  width: 80px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: block;
+  text-align: center;
+  display: flex;
+}
+
+.user {
+  width: 250px;
+  white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+  overflow: hidden; /* Oculta el texto que no cabe en el contenedor */
+  text-overflow: ellipsis;
+  display: inline-block;
+  text-align: center;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.points {
+  width: 70px;
+}
+
+.gold {
+  color: gold;
+}
+
+.firstPosition {
+  background-color: rgba(255, 215, 0, 0.3);
+  border: 1px solid gold;
+  color: gold;
+}
+
+.silver {
+  color: silver;
+}
+.secondPosition {
+  background-color: rgba(192, 192, 192, 0.3);
+  border: 1px solid rgba(192, 192, 192, 0.9);
+  color: silver;
+}
+
+.bronze {
+  color: rgb(205, 127, 50);
+}
+
+.thirdPosition {
+  background-color: rgba(205, 127, 50, 0.3);
+  border: 1px solid rgb(205, 127, 50);
+  color: rgb(205, 127, 50);
+}
+
+.showTicket {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgba(192, 192, 192, 0.3);
+  padding: 6px 0px;
+  border-radius: 10px;
+  color: rgba(192, 192, 192, 0.3);
+  font-size: var(--xxs);
+  width: 50px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.showTicket:hover {
+  border: 1px solid silver;
+  color: silver;
+}
+
+.showTicketDisabled {
+  border: 1px solid rgba(192, 192, 192, 0.3);
+  color: rgba(192, 192, 192, 0.3);
+}
+.showTicketDisabled:hover {
+  cursor: not-allowed;
+}
+
+.alertIcon {
+  font-size: 16px;
+  color: var(--primary);
+}
+.pending {
+  border: 1px solid var(--primary);
+}
+
+@media (max-width: 768px) {
+  .container {
+    height: 30px;
+  }
+  .puesto {
+    width: 45px;
+  }
+
+  .ticket {
+    width: 50px;
+  }
+
+  .user {
+    flex: 1;
+  }
+
+  .points {
+    width: 50px;
+  }
+
+  .showTicket {
+    width: 50px;
+  }
+  .textName {
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+}

@@ -1,0 +1,30 @@
+.headerText {
+  font-weight: 600;
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: 12px;
+  padding: 8px;
+  font-size: var(--l);
+}
+
+.headerText:hover {
+  color: var(--primary);
+
+  border: 1px solid var(--primary-text);
+  border-radius: 12px;
+  padding: 8px;
+}
+
+.headerTextSelected {
+  color: var(--primary);
+}
+
+.headerTextSelected:hover {
+  color: var(--primary);
+  border: 1px solid transparent;
+}
+
+.logoutText {
+  justify-content: center;
+  font-weight: 700;
+}

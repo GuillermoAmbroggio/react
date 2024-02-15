@@ -1,0 +1,33 @@
+.container {
+  background-color: rgba(20, 20, 20, 0.1);
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+.containerList {
+  width: 1000px;
+  gap: 8px;
+}
+
+.titleRule {
+  color: var(--dark);
+  font-family: 'BebasNeue', sans-serif;
+  font-weight: 700;
+  font-size: var(--l);
+}
+
+@media (max-width: 768px) {
+  .containerList {
+    width: -webkit-fill-available;
+    padding: 16px;
+    gap: 4px;
+    min-height: 300px;
+    margin-top: 16px;
+  }
+  .titleRule {
+    margin-bottom: 4px;
+  }
+}

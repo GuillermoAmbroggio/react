@@ -1,0 +1,26 @@
+.containerResultSection {
+  background-color: var(--dark);
+  padding: 48px 0px;
+}
+
+.totalTickets {
+  color: var(--primary-text);
+  text-align: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.showMoreTickets {
+  cursor: pointer;
+}
+
+.showMoreTickets:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .containerItemsTable {
+    width: -webkit-fill-available;
+    padding: 0px 8px;
+  }
+}

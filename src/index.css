@@ -1,13 +1,146 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+:root {
+  max-width: 100vw;
+  min-height: 100vh;
+  font-size: 16px;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+
+  font-weight: 400;
+
+  /* tokens */
+  --primary: #f9ba15;
+  --secondary: #edeac2;
+  --tertiary: #c99400;
+  --dark: #0a1014;
+  --grey: #182329;
+  --mid-grey: #9b9b9b;
+  --light-grey: #ebebeb;
+  --white: #ffffff;
+  --black: #0000;
+  --background: #ffffff;
+  --error: red;
+  --success: rgb(62, 224, 62);
+  --red: #ff0000;
+  /* Sizes*/
+  --xxs: 0.5rem; /* 8px*/
+  --xs: 0.75rem; /* 12px*/
+  --s: 0.875rem; /* 14px*/
+  --m: 1rem; /* 16px*/
+  --l: 1.125rem; /* 18px*/
+  --xl: 1.5rem; /* 24px*/
+  --xxl: 2rem; /* 32px*/
+  --xxxl: 3rem; /* 48px */
+  --xxxxl: 5rem; /* 80px */
+
+  /* texts colors */
+  --primary-text: var(--white);
+  --secondary-text: var(--secondary);
+  --tertiary-text: #797e87;
+  --success-text: var(--success);
+  --error-text: var(--error);
+  --disabled-text: var(--mid-grey);
+  --dark-text: (var(--dark));
+  /* text weight  */
+  --bold-text: 800;
+  --medium-text: 600;
+  --normal-text: 400;
+
+  --checkboxSize: 1;
+}
+#root {
+  max-width: 100vw;
+  min-height: 100vh;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  font-weight: 800;
+  color: var(--primary-text);
+  text-decoration: inherit;
+}
+
+p {
+  margin: 0px;
+}
+
+body {
+  margin: 0;
+  max-width: 100vw;
+  min-height: 100vh;
+  overflow-x: hidden;
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+.ant-btn-primary {
+  font-weight: 900;
+  letter-spacing: 1px;
+  color: var(--dark);
+}
+
+::-webkit-scrollbar-track {
+  background-color: gray;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.5); /* color of the scroll thumb */
+  border-radius: 20px; /* roundness of the scroll thumb */
+  border: 4px solid rgba(255, 255, 255, 0.1); /* creates padding around scroll thumb */
+}
+
+/* Estilos para el scrollbar */
+::-webkit-scrollbar {
+  width: 17px; /* Ancho del scrollbar */
+}
+
+.ant-modal {
+  display: flex;
+  justify-content: center;
+  max-width: -webkit-fill-available;
+}
+
+.ant-tooltip .ant-tooltip-inner {
+  color: var(--primary-text);
+}
+
+@media (max-width: 768px) {
+  .ant-modal-root .ant-modal {
+    margin: 8px;
+    width: -webkit-fill-available;
+    max-width: -webkit-fill-available;
+  }
+  .ant-modal-content {
+    width: 100%;
+    min-width: 100%;
+  }
+  .ant-drawer-content {
+    background-color: rgba(0, 0, 0, 0.8) !important;
+    color: var(--primary-text);
+  }
+
+  .ant-drawer-body {
+    display: flex;
+  }
+  .ant-alert {
+    font-size: 12px;
+  }
+
+  .ant-tag {
+    margin-inline-end: 0px;
+  }
 }

@@ -1,0 +1,73 @@
+.containerHeader {
+  font-size: var(--l);
+  gap: 4px;
+  font-weight: bold;
+  color: var(--primary-text);
+}
+
+.puesto {
+  width: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ticket {
+  width: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.user {
+  width: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.points {
+  width: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.showTicket {
+  width: 50px;
+}
+
+@media (max-width: 768px) {
+  .containerHeader {
+    width: -webkit-fill-available;
+    padding: 0px 8px;
+  }
+  .puesto {
+    width: 45px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    justify-content: flex-start;
+  }
+
+  .ticket {
+    width: 50px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    justify-content: flex-start;
+  }
+
+  .user {
+    flex: 1;
+  }
+
+  .points {
+    width: 50px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    justify-content: flex-start;
+  }
+
+  .showTicket {
+    width: 50px;
+  }
+}

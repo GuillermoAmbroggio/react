@@ -1,0 +1,49 @@
+.flex {
+  display: flex;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  position: relative;
+
+  min-height: 100vh; /* Altura mínima para asegurarse de que la capa negra se extienda */
+  overflow-y: auto;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  box-sizing: content-box; /* Asegura que el padding no incremente el ancho */
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo negro con opacidad del 0.5 */
+  min-height: 100vh;
+}
+
+.containerHeaderBody {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.footer {
+  background-color: rgba(0, 0, 0, 0.95);
+  min-height: 200px;
+  display: flex;
+  flex: 1;
+}
+
+.containerBody {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding-right: 0px; /* Ancho del scroll vertical */
+  }
+}

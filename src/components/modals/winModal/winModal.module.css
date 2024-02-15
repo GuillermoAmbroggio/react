@@ -1,0 +1,56 @@
+.content {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: var(--xxxl);
+  border-radius: 16px;
+  margin: -20px -24px;
+  border: 1px solid silver;
+  color: var(--primary-text);
+}
+
+.label {
+  color: var(--primary-text);
+}
+
+.closeIcon {
+  color: var(--primary-text);
+}
+
+.title {
+  font-size: var(--xl);
+  text-align: center;
+}
+
+.text {
+  font-size: var(--m);
+  margin: 8px;
+}
+
+.formText {
+  margin: 8px;
+}
+
+.checkbox {
+  margin: 8px;
+  gap: 8px;
+}
+
+.textWaring {
+  margin: 4px;
+  font-style: italic;
+  color: var(--primary-text);
+}
+.alert {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+.modal {
+  top: 24px;
+}
+@media (max-width: 768px) {
+  .content {
+    padding: 40px 8px;
+  }
+  .modal {
+    top: 0;
+  }
+}

@@ -1,0 +1,64 @@
+.container {
+  padding: 8px 0px;
+  width: -webkit-fill-available;
+}
+
+.descriptionHeaderText {
+  padding: 8px 0px;
+  width: -webkit-fill-available;
+}
+
+.containerTeam {
+  display: flex;
+  font-weight: 700;
+  align-items: center;
+  width: 200px;
+  justify-content: center;
+}
+
+.containerVs {
+  display: flex;
+  font-weight: 700;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+}
+
+.containerStatus {
+  display: flex;
+  font-weight: 700;
+  align-items: center;
+  width: 100px;
+}
+
+.containerPoints {
+  display: flex;
+  font-weight: 700;
+  width: 70px;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 4px 0px;
+    font-size: var(--s);
+  }
+  .containerTeam {
+    width: 100px;
+  }
+  .containerVs {
+    flex: 1;
+    overflow: hidden;
+    justify-content: flex-start;
+    width: auto;
+  }
+  .containerPoints {
+    width: 40px;
+    overflow: hidden;
+    justify-content: flex-start;
+  }
+  .containerStatus {
+    width: 70px;
+  }
+}

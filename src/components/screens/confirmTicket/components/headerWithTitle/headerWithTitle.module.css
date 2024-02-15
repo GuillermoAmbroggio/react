@@ -1,0 +1,48 @@
+.headerContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 24px;
+  align-items: center;
+  color: var(--primary-text);
+}
+
+.goBackContainer {
+}
+
+.title {
+  font-weight: var(--bold-text);
+  letter-spacing: 2px;
+  color: var(--primary-text);
+}
+
+.mobileMenu {
+  display: none;
+}
+.titleMobile {
+  display: none;
+}
+@media (max-width: 768px) {
+  .authHeader {
+    display: none;
+  }
+  .mobileMenu {
+    display: flex;
+    gap: 24px;
+  }
+  .headerContainer {
+    justify-content: space-between;
+  }
+  .title {
+    display: none;
+  }
+
+  .titleMobile {
+    display: flex;
+    color: var(--primary-text);
+    font-weight: var(--bold-text);
+    letter-spacing: 2px;
+    text-align: center;
+    justify-content: center;
+  }
+}

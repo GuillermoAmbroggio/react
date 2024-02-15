@@ -1,0 +1,22 @@
+.content {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: var(--xxxl);
+  border-radius: 16px;
+  margin: -20px -24px;
+  border: 1px solid silver;
+}
+
+.closeIcon {
+  color: var(--primary-text);
+}
+.containerPagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+}
+
+@media (max-width: 768px) {
+  .content {
+    padding: 40px 8px;
+  }
+}

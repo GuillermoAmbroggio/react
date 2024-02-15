@@ -1,0 +1,110 @@
+.containerHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: var(--primary-text);
+}
+.containerHeaderHome {
+  padding: 30px 24px 24px 24px;
+}
+
+.containerHeaderHomeScroll {
+  padding: 24px;
+  position: fixed;
+  top: 0;
+  width: -webkit-fill-available;
+  background-color: rgba(0, 0, 0, 0.85);
+  z-index: 4;
+}
+
+.containerHeaderRest {
+  padding: 30px 24px 24px 24px;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 4;
+  position: relative;
+}
+
+.containerHeaderRestScroll {
+  padding: 24px;
+  position: fixed;
+  z-index: 4;
+  top: 0;
+  width: -webkit-fill-available;
+  background-color: rgba(0, 0, 0, 0.85);
+  min-height: 90px;
+}
+
+.headerText {
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 12px;
+  padding: 8px;
+
+  border: 1px solid transparent;
+  transition: border 1s;
+}
+
+.headerText:hover {
+  color: var(--secondary-text);
+
+  border: 1px solid var(--primary-text);
+  border-radius: 12px;
+  padding: 8px;
+}
+
+.headerTextSelected {
+  color: var(--secondary-text);
+}
+
+.headerTextSelected:hover {
+  color: var(--secondary-text);
+  border: 1px solid transparent;
+}
+
+.dividerWidth {
+  width: 33%;
+  display: flex;
+  justify-content: center;
+}
+
+.containerLogo {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+}
+.logoTitle {
+  font-family: 'BebasNeue', sans-serif;
+  text-transform: uppercase;
+  color: var(--primary-text);
+  letter-spacing: 5px;
+  font-weight: bold;
+  font-size: var(--l);
+}
+
+.mobileMenu {
+  display: none;
+}
+@media (max-width: 768px) {
+  .navigationMenu {
+    display: none;
+  }
+
+  .authHeader {
+    display: none;
+  }
+  .mobileMenu {
+    display: flex;
+    gap: 24px;
+  }
+  .containerHeader {
+    justify-content: space-between;
+  }
+
+  .containerLogo {
+    overflow: hidden;
+    width: -webkit-fill-available;
+    justify-content: flex-start;
+  }
+}

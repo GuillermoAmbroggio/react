@@ -1,0 +1,23 @@
+.container {
+  background-color: rgba(20, 20, 20, 0.9);
+  min-height: 400px;
+  padding: var(--xxl);
+  flex: 1;
+}
+
+.fullname {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.createPasswordText {
+  color: var(--primary-text);
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .container {
+    min-height: 300px;
+  }
+}

@@ -1,0 +1,34 @@
+.container {
+  cursor: pointer;
+  gap: 16px;
+  justify-content: center;
+  align-items: center;
+}
+.container:hover {
+  opacity: 0.8;
+}
+.text {
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+.circle {
+  width: 32px;
+  height: 32px;
+  background-color: var(--primary);
+  color: var(--primary-text);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+@media (max-width: 768px) {
+  .container {
+    gap: 4px;
+  }
+  .circle {
+    width: 24px;
+    height: 24px;
+    font-size: var(--s);
+  }
+}

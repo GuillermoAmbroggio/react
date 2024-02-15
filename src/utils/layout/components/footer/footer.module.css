@@ -1,0 +1,10 @@
+.footerText {
+  color: var(--primary-text);
+  font-size: var(--m);
+  padding: var(--xxl);
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}

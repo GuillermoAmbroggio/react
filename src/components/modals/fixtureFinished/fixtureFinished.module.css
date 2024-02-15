@@ -1,0 +1,104 @@
+.content {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: var(--xxxl);
+  border-radius: 16px;
+  margin: -20px -24px;
+  border: 1px solid silver;
+  color: var(--primary-text);
+  font-size: var(--l);
+  width: 700px;
+}
+.tournamenttext {
+  font-size: var(--xxl);
+  text-align: center;
+  font-weight: bold;
+  line-height: normal;
+}
+
+.title {
+  font-size: var(--xxl);
+  text-align: center;
+  font-weight: bold;
+  line-height: normal;
+  margin-bottom: 16px;
+}
+
+.checkbox {
+  margin: 8px 0px;
+  gap: 8px;
+  cursor: pointer;
+}
+.bold {
+  font-weight: bold;
+}
+
+.tickettext {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.infotext {
+  font-size: var(--s);
+  font-style: italic;
+  margin: 16px 0px;
+}
+
+.subtitle {
+  margin: 8px 0px;
+}
+
+.prizetext {
+  margin: 16px 0px;
+}
+
+.img {
+  width: 300px;
+  align-self: center;
+  margin-bottom: 16px;
+}
+
+.closeIcon {
+  color: var(--primary-text);
+}
+
+.button {
+  padding: 24px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.modal {
+  top: 24px;
+}
+
+@media (max-width: 768px) {
+  .content {
+    width: auto;
+    font-size: var(--m);
+    padding: var(--m);
+  }
+  .tournamenttext {
+    font-size: var(--xl);
+  }
+
+  .title {
+    font-size: var(--xl);
+    margin-bottom: 8px;
+  }
+  .img {
+    width: 150px;
+    align-self: center;
+    margin-bottom: 16px;
+  }
+  .resttext {
+    font-size: var(--s);
+    text-align: justify;
+  }
+  .infotext {
+    text-align: justify;
+  }
+  .modal {
+    top: 0;
+  }
+}

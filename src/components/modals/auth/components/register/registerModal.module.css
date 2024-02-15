@@ -1,0 +1,32 @@
+.fullname {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.forgotPassword {
+  color: var(--tertiary);
+  font-size: var(--xs);
+  cursor: pointer;
+  margin-bottom: var(--xl);
+  margin-top: var(--xxs);
+  display: block;
+}
+
+.forgotPassword:hover {
+  color: var(--primary);
+}
+
+.createNew {
+  color: var(--tertiary);
+  font-size: var(--xs);
+  cursor: pointer;
+  margin-bottom: var(--xl);
+  margin-top: var(--xxs);
+  display: flex;
+  justify-content: center;
+}
+
+.createNew:hover {
+  color: var(--primary);
+}
